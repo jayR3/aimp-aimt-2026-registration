@@ -417,7 +417,7 @@ h2 {
 .tally-frame {
   display: block;
   width: 100%;
-  min-height: 1700px;
+  min-height: 2800px;
   border: 0;
   background: var(--white);
 }
@@ -664,7 +664,7 @@ textarea:focus {
   }
 
   .tally-frame {
-    min-height: 1900px;
+    min-height: 3300px;
   }
 
   .span-2 {
