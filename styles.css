@@ -374,14 +374,52 @@ h2 {
   padding: clamp(20px, 4vw, 34px);
 }
 
+.tally-registration-card {
+  display: grid;
+  gap: 20px;
+}
+
 .form-heading {
   padding-bottom: 20px;
   border-bottom: 1px solid var(--line);
 }
 
+.tally-heading {
+  padding-bottom: 18px;
+}
+
 .form-heading p:last-child {
   margin-bottom: 0;
   color: var(--muted);
+}
+
+.tally-note {
+  padding: 16px;
+  border-left: 4px solid var(--gold);
+  border-radius: 6px;
+  background: rgba(217, 236, 244, 0.48);
+  color: var(--navy);
+}
+
+.tally-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.tally-frame-wrap {
+  overflow: hidden;
+  border: 1px solid rgba(22, 41, 71, 0.12);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.tally-frame {
+  display: block;
+  width: 100%;
+  min-height: 1700px;
+  border: 0;
+  background: var(--white);
 }
 
 fieldset {
@@ -618,6 +656,15 @@ textarea:focus {
   .event-facts div,
   .form-grid {
     grid-template-columns: 1fr;
+  }
+
+  .tally-actions .primary-action,
+  .tally-actions .secondary-action {
+    justify-content: center;
+  }
+
+  .tally-frame {
+    min-height: 1900px;
   }
 
   .span-2 {
